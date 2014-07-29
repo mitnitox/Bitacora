@@ -1,0 +1,8 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+    </div>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap-tab.js"></script>
+    <center><h5>&COPY;&nbsp;2014</h5></center>
+  
+</div> <!-- FIN CONTAINER -->
