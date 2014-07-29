@@ -22,9 +22,10 @@ public class Turno{
         public void ConsultaTurno(){
             try{
                 c = new Coneccion();
-                c.setConsulta("select id_turno, usuario.nombres, usuario.apellidos, puerto.nombre, fecha_inicio, hora_inicio, fecha_final, hora_final "
+                c.setConsulta("select id_turno, usuario.nombres, usuario.apellidos, puerto.nombre, "
+                        + "fecha_inicio, hora_inicio, fecha_final, hora_final "
                         + "from usuario, turno, puerto where "
-                        + "usuario.id_usuario=turno.id_usuario and puerto.id_puerto=turno.id_puerto ");
+                        + "usuario.id_usuario=turno.id_usuario and puerto.id_puerto=turno.id_puerto");
 		while(c.getRs().next()){
                     listId.add(c.getRs().getString("id_turno"));
                     listNombres.add(c.getRs().getString("usuario.nombres"));

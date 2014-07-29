@@ -30,19 +30,20 @@ import="negocio.Turno"
                                 <th>ID</th><th>Nombres</th><th>Apellidos</th><th>Puerto</th><th>Fecha Inicio</th><th>Hora</th><th>Fecha Termino</th><th>Hora</th>
                                 <tr>
                                     <%
-					Turno u = new Turno();
+                                        
+					Turno t = new Turno();
 						
-					u.ConsultaTurno();
-					//out.println(u.getCantidad());
-					for(int i=0; i<u.getCantidad();i++){
-                                            out.println("<tr><td><a href='UsuarioSrvlt?id="+u.getId(i)+"&accion=editar'>"+u.getId(i)+"</a></td>");
-                                            out.println("<td><a href=''>"+u.getNombres(i)+"</a></td>");
-                                            out.println("<td><a href='#'>"+u.getApellidos(i)+"</a></td>");
-                                            out.println("<td><a href='#'>"+u.getPuerto(i)+"</a></td>");
-                                            out.println("<td><a href='#'>"+u.getFechaInicio(i)+"</a></td>");
-                                            out.println("<td><a href='#'>"+u.getHoraInicio(i)+"</a></td>");
-                                            out.println("<td><a href='#'>"+u.getFechaFinal(i)+"</a></td>");
-                                            out.println("<td><a href='#'>"+u.getHoraFinal(i)+"</a></td>");
+					t.ConsultaTurno();
+					//out.println(t.getCantidad()); probando hacer un push
+					for(int i=0; i<t.getCantidad();i++){
+                                            out.println("<tr><td><a href='UsuarioSrvlt?id="+t.getId(i)+"&accion=editar'>"+t.getId(i)+"</a></td>");
+                                            out.println("<td><a href=''>"+t.getNombres(i)+"</a></td>");
+                                            out.println("<td><a href='#'>"+t.getApellidos(i)+"</a></td>");
+                                            out.println("<td><a href='#'>"+t.getPuerto(i)+"</a></td>");
+                                            out.println("<td><a href='#'>"+t.getFechaInicio(i)+"</a></td>");
+                                            out.println("<td><a href='#'>"+t.getHoraInicio(i)+"</a></td>");
+                                            out.println("<td><a href='#'>"+t.getFechaFinal(i)+"</a></td>");
+                                            out.println("<td><a href='#'>"+t.getHoraFinal(i)+"</a></td>");
 					}                         
                                     %>                                    
                                 </tr>
